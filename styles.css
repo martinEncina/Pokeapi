@@ -1,0 +1,9 @@
+.cardFront{
+    background-color: aqua;
+    width: 10rem;
+}
+
+.cardFront:hover{
+    background-color: rgb(212, 255, 0);
+    width: 10rem;
+}
