@@ -1,9 +1,184 @@
-.cardFront{
-    background-color: aqua;
-    width: 10rem;
+@import url('https://fonts.cdnfonts.com/css/pokemon-solid');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+ }
+ 
+body{
+    width: 100%;
+    height: 100vh;
+    background: COLOR;
+    font-family: 'Pokemon Solid' , sans-serif ;
+    align-items: center;
+    background-image: url(https://f.rpp-noticias.io/2019/02/27/758683gen-1jpg.jpg);
+    background-size: 100% auto;
 }
 
-.cardFront:hover{
-    background-color: rgb(212, 255, 0);
-    width: 10rem;
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+.card{
+    width: 200px;      
+    overflow: hidden;
+    border: 3px solid white !important;
+    position: relative;    
+    margin: 5px;
+    padding: 40px 0px;
+    box-shadow: 10px 2px 30px black;
+    
+}
+      
+.card-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+   
+
+} 
+      
+.cardBody{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: -100%;
+    position: absolute;
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1s;
+}
+      
+.card:hover .cardBody{
+    right:0;
+}      
+.cardTitle{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    font-family: 'Pokemon Solid' , sans-serif;
+  }
+
+.cardTitle2{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    font-family: 'Pokemon Solid' , sans-serif;
+}
+.card-sub-title{
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+    font-family: 'Pokemon Solid' , sans-serif;
+}
+
+.numero{
+  padding-left: 22px;
+  font-family: 'Pokemon Solid' , sans-serif ;
+}
+
+/* COLORES DE TIPOS  */
+.normal{
+  background: linear-gradient(to bottom, #BCBCAC, #FFFFFF);
+} 
+.fighting{
+  background: linear-gradient(to bottom, #BC5442, #FFFFFF)
+  
+} 
+.flying{
+  background: linear-gradient(to right, #BCBCAC, #669AFF) 
+} 
+.poison{
+  background-image: linear-gradient(to bottom, #AB549A, #FFC5E3);
+}   
+.ground{
+  background-image: linear-gradient(to bottom, #DEBC54, #FFF3B0);
+} 
+.rock{
+  background-image: linear-gradient(to bottom, #BCAC66, #E7E1BF);
+} 
+
+.bug{
+  background-image: linear-gradient(to bottom, #ABBC1C, #EAF077);
+} 
+.ghost{
+  background-image: linear-gradient(to bottom, #ABBC1C, #EAF077);
+} 
+.steel{
+  background-image: linear-gradient(to bottom, #ABACBC, #E1E0EB);
+} 
+.fire{
+  background-image: linear-gradient(to bottom, #FF421C, #FFB2A2);
+} 
+.water{
+  background-image: linear-gradient(to bottom, #2F9AFF, #9AD7FF);
+} 
+.grass{
+  background-image: linear-gradient(to bottom, #78CD54, #B7F29B);
+} 
+.electric{
+  background-image: linear-gradient(to bottom, #FFCD30, #FFED97);
+} 
+.psychic{
+  background-image: linear-gradient(to bottom, #FF549A, #FFA3C2);
+} 
+.ice{
+  background-image: linear-gradient(to bottom, #78DEFF, #C1E8FF);
+}
+.dragon{
+  background-image: linear-gradient(to bottom, #7866EF, #C5B5FF);
+}
+.dark{
+  background-image: linear-gradient(to bottom, #785442, #C79E89);
+}
+.fairy{
+  background-image: linear-gradient(to bottom, #FFACFF, #F5D4FF);
+}
+.shadow{
+  background-image: linear-gradient(to bottom, #0E2E4C, #061722);
+}
+
+.textHeader{
+ font-family: 'Pokemon Solid' , sans-serif;
+ font-size: 134px;
+ text-align: center;
+ padding-bottom: 50px;
+ -webkit-text-fill-color: #ffcc01;
+ -webkit-text-stroke: 4px #3264ae;
+ font-weight: 900;
+ letter-spacing: 8px;
+ text-shadow: 30px 30px 30px black;
+}
+
+.buscador{
+  display: flex;
+  justify-content: center;
+  
+}
+
+.claseInput{
+  height: 62px;
+  text-align: center;
+  background-color: #ffcc01;
+  color: #3264ae;
+  font-family: 'Pokemon Solid' , sans-serif;
+  font-weight: 100;
+  padding: 0px 0px 8px;
+  font-size: 30px;
+  margin-bottom: 35px;
+  border: 5px solid;
+  border-radius: 15px;
+  
 }
